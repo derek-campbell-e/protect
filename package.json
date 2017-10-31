@@ -1,0 +1,11 @@
+{
+  "name": "protect",
+  "version": "1.0.0",
+  "description": "protect your files, messages, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "debug=*,-node* nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
