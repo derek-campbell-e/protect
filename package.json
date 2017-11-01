@@ -4,7 +4,8 @@
   "description": "protect your files, messages, etc.",
   "main": "index.js",
   "scripts": {
-    "test": "debug=*,-node* nodemon index.js"
+    "test": "debug=*,-node* nodemon index.js",
+    "tdd": "nodemon --exec 'mocha tests/**.js'"
   },
   "author": "",
   "license": "ISC"
