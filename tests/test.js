@@ -4,12 +4,12 @@ describe("Protect", function(){
   var protect = require('../src/protect')();
   describe("#encrypt()", function(){
     it("should encrypt a file", function(){
-      protect.encrypt.text("hello there");
+      //protect.encrypt.text("hello there");
     });
   });
 });
 
-
+/*
 describe('Common Utilities', function(){
   var randomBytes = require('../src/common/randomBytes');
   var deleteFiles = require('../src/common/deleteFiles');
@@ -56,13 +56,12 @@ describe('Common Utilities', function(){
       });
     });
 
-    
+
 
   });
 
 
 
-  
+
 });
-
-
+*/

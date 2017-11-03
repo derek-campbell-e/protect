@@ -1,6 +1,8 @@
 module.exports = function Protect(){
   var protect = {};
 
+  protect.keychain = require('./keychain');
+
   var private = {};
 
   private.common = {};
@@ -14,6 +16,6 @@ module.exports = function Protect(){
   protect.encrypt = require('../src/encyrpt')(protect, private);
 
   var random = private.common.randomBytes(256);
-  
+
   return protect;
 };
