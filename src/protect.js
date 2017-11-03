@@ -1,9 +1,12 @@
 module.exports = function Protect(){
   var protect = {};
 
-  protect.keychain = require('./keychain');
+  protect.meta = require('../package.json');
+
+  protect.keychain = require('./keychain')();
 
   var private = {};
+  var cli = require('./cli')(protect);
 
   private.common = {};
   private.common.createKeyPair = require('./common/createKeyPair');
